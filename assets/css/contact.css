@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Geneva';
+    src: url('./fonts/Geneva.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeue.ttc') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeue.ttc') format('truetype');
+    font-weight: 600;
+    font-style:unset;
+}
+
+body{
+    margin: 0;
+    background-color: #F7F4F0;
+}
+.bar-head{
+    font-family: Geneva;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.nav-bar{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 30px;
+}
+.nav-bar a{
+    text-decoration: none;
+    justify-content: right;
+    color: #1B203F;
+}
+.cours-en-ligne{
+    display: flex;
+    background-color: #FFCE00;
+    border-radius: 30px;
+    padding: 5px;
+    padding-inline: 10px;
+    align-items: center;
+}
+.expertise{
+    display: flex;
+    background-color: #1FD186;
+    border-radius: 30px;
+    padding: 5px;
+    padding-inline: 10px;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    background-color: white;
+    border: solid;
+    border-radius: 30px;
+    padding: 5px;
+    padding-inline: 10px;
+    color: #1B203F;
+    align-items: center;
+
+}
+.logo-header{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+.logo-header img{
+    width: 100%;
+}
+.menu-toggle{
+    display: none;
+}
+.menu-burger{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 30px;
+}
+.bar{
+    height: 2px;
+    width: 10px;
+    background-color: #1B203F;
+    margin: 4px 0;
+    padding: 2px;
+    padding-inline: 20px;
+    border-radius: 30px;
+    transition: all 0,3s;
+}
+.nav-responsive{
+    display: none;
+    background-color: #1FD186;
+    padding: 20px;
+}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav li {
+    margin: 10px 0;
+}
+.nav a {
+    font-family: HelveticaNeue;
+    text-decoration: none;
+    color: white;
+}
+.menu-toggle:checked + .menu-burger + .nav {
+    display: block;
+}
